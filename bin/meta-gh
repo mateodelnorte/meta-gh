@@ -1,0 +1,36 @@
+#!/usr/bin/env node
+
+let loaded = false;
+
+if (loaded) return process.kill();
+
+const program = require('commander');
+const debug = require('debug')('meta-git');
+
+program
+  .command('issue', 'Provides a set of util commands to work with Issues')
+  .command('milestone', 'Provides a set of util commands to work with Milestones')
+  .command('pull-request', 'Provides a set of util commands to work with Pull Requests')
+  .command('repo', 'Provides a set of util commands to work with Repositories')
+  .parse(process.argv);
+
+loaded = true;
+
+/*
+usage: gh <command> [payload] [--flags] [--verbose] [--no-hooks]
+
+List of available commands:
+  al, alias             Create alias for a username.
+  gi, gists             Provides a set of util commands to work with Gists.
+  he, hello             Hello world example. Copy to start a new command.
+  is, issue             Provides a set of util commands to work with Issues.
+  ms, milestone         Provides a set of util commands to work with Milestones.
+  nt, notification      Provides a set of util commands to work with Notifications.
+  pr, pull-request      Provides a set of util commands to work with Pull Requests.
+  re, repo              Provides a set of util commands to work with Repositories.
+  tk, track             Anonymous usage reporting control.
+  us, user              Provides the ability to login and logout if needed.
+
+(*) Flags that can execute an action.
+'gh help' lists available commands.
+'gh help -a' lists all available subcommands.*/

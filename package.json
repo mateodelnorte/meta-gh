@@ -1,0 +1,40 @@
+{
+  "name": "meta-gh",
+  "version": "0.0.0",
+  "description": "gh plugin for meta",
+  "bin": {
+    "meta-gh": "./bin/meta-gh",
+    "meta-gh-issue": "./bin/meta-gh-issue",
+    "meta-gh-milestone": "./bin/meta-gh-milestone",
+    "meta-gh-pull-request": "./bin/meta-gh-pull-request",
+    "meta-gh-repo": "./bin/meta-gh-repo"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mateodelnorte/meta-gh.git"
+  },
+  "keywords": [
+    "git",
+    "gh",
+    "github",
+    "meta",
+    "repo",
+    "repository",
+    "metarepository",
+    "metarepo"
+  ],
+  "author": "mholtzman@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mateodelnorte/meta-gh/issues"
+  },
+  "homepage": "https://github.com/mateodelnorte/meta-gh#readme",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "meta-loop": "0.0.0"
+  }
+}
