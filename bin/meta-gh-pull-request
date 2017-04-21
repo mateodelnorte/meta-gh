@@ -1,0 +1,42 @@
+#!/usr/bin/env node
+
+const assertUsage = require('../lib/assertUsage');
+const metaLoop = require('meta-loop');
+
+const usage = `
+usage: 
+       meta gh pull-request Provides a set of util commands to work with Pull Requests.
+   
+        -a, --all (Boolean)
+        -b, --branch (String)
+        -B, --browser* (Boolean)
+        -C, --close* (Boolean)
+        -c, --comment* (String)
+        -D, --description (String)
+        -d, --detailed (Boolean)
+        --direction (String)
+        -f, --fetch* (Boolean)
+        --fwd* (String)
+        -i, --issue (Number)
+        -I, --info* (Boolean)
+        -l, --list* (Boolean)
+        -m, --me (Boolean)
+        -M, --merge* (Boolean)
+        -n, --number (String)
+        -o, --open* (Boolean)
+        -O, --org (String)
+        -R, --rebase* (Boolean)
+        --remote (String)
+        -r, --repo (String)
+        --sort (String)
+        -S, --state (open, closed)
+        -s, --submit* (String)
+        -t, --title (String)
+        -u, --user (String)
+       `;
+
+if (process.argv[2] === '--help') return console.log(usage);
+
+if ( ! assertUsage('meta gh pull-request', usage, { allow: /.*/ })) return console.log(usage);
+
+metaLoop(`gh pull-request ${process.argv.slice(2).join(' ')}`);

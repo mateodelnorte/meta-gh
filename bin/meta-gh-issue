@@ -1,0 +1,37 @@
+#!/usr/bin/env node
+
+const assertUsage = require('../lib/assertUsage');
+const metaLoop = require('meta-loop');
+
+const usage = `
+usage: 
+       meta gh issue [payload] [--flags] [--verbose] [--no-hooks]
+
+        is, issue Provides a set of util commands to work with Issues.
+        -a, --all (Boolean)
+        -A, --assignee (String)
+        -B, --browser* (Boolean)
+        -C, --close* (Boolean)
+        -c, --comment* (String)
+        -d, --detailed (Boolean)
+        -L, --label (String)
+        -l, --list* (Boolean)
+        -m, --message (String)
+        -M, --milestone (Number, String)
+        --no-milestone (Boolean)
+        -N, --new* (Boolean)
+        -n, --number (String)
+        -o, --open* (Boolean)
+        --remote (String)
+        -r, --repo (String)
+        -s, --search* (String)
+        -S, --state (open, closed)
+        -t, --title (String)
+        -u, --user (String)
+       `;
+
+if (process.argv[2] === '--help') return console.log(usage);
+
+if ( ! assertUsage('meta gh issue', usage, { allow: /.*/ })) return console.log(usage);
+
+metaLoop(`gh issue ${process.argv.slice(2).join(' ')}`);

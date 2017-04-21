@@ -35,6 +35,7 @@
   "homepage": "https://github.com/mateodelnorte/meta-gh#readme",
   "dependencies": {
     "commander": "^2.9.0",
-    "meta-loop": "0.0.0"
+    "meta-exec": "0.0.0",
+    "meta-loop": "0.0.1"
   }
 }

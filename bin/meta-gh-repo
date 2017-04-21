@@ -1,0 +1,31 @@
+#!/usr/bin/env node
+
+const assertUsage = require('../lib/assertUsage');
+const metaLoop = require('meta-loop');
+
+const usage = `
+usage: 
+       meta repo Provides a set of util commands to work with Repositories.
+        -B, --browser* (Boolean)
+        -c, --clone* (Boolean)
+        -D, --delete* (String)
+        --description (String)
+        -d, --detailed (Boolean)
+        --gitignore (String)
+        -f, --fork* (String)
+        --homepage (String)
+        --init (Boolean)
+        -l, --list* (Boolean)
+        -N, --new* (String)
+        -O, --organization (String)
+        -p, --private (Boolean)
+        -r, --repo (String)
+        -t, --type (all, forks, member, owner, public, private, sources)
+        -u, --user (String)
+       `;
+
+if (process.argv[2] === '--help') return console.log(usage);
+
+if ( ! assertUsage('meta gh repo', usage, { allow: /.*/ })) return console.log(usage);
+
+metaLoop(`gh repo ${process.argv.slice(2).join(' ')}`);
