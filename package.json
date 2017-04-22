@@ -1,12 +1,17 @@
 {
   "name": "meta-gh",
-  "version": "0.0.0",
+  "version": "0.0.1g",
   "description": "gh plugin for meta",
   "bin": {
     "meta-gh": "./bin/meta-gh",
+    "meta-gh-is": "./bin/meta-gh-issue",
     "meta-gh-issue": "./bin/meta-gh-issue",
+    "meta-gh-issues": "./bin/meta-gh-issue",
     "meta-gh-milestone": "./bin/meta-gh-milestone",
+    "meta-gh-ms": "./bin/meta-gh-milestone",
+    "meta-gh-pr": "./bin/meta-gh-pull-request",
     "meta-gh-pull-request": "./bin/meta-gh-pull-request",
+    "meta-gh-re": "./bin/meta-gh-repo",
     "meta-gh-repo": "./bin/meta-gh-repo"
   },
   "main": "index.js",
