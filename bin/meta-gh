@@ -9,9 +9,14 @@ const debug = require('debug')('meta-git');
 
 program
   .command('issue', 'Provides a set of util commands to work with Issues')
+    .alias('issues')
+    .alias('is')
   .command('milestone', 'Provides a set of util commands to work with Milestones')
+    .alias('ms')
   .command('pull-request', 'Provides a set of util commands to work with Pull Requests')
+    .alias('pr')
   .command('repo', 'Provides a set of util commands to work with Repositories')
+    .alias('re')
   .parse(process.argv);
 
 loaded = true;
