@@ -1,6 +1,6 @@
 {
   "name": "meta-gh",
-  "version": "0.0.1g",
+  "version": "0.0.1",
   "description": "gh plugin for meta",
   "bin": {
     "meta-gh": "./bin/meta-gh",
