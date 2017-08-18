@@ -1,6 +1,6 @@
 {
   "name": "meta-gh",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "gh plugin for meta",
   "bin": {
     "meta-gh": "./bin/meta-gh",
@@ -40,6 +40,7 @@
   "homepage": "https://github.com/mateodelnorte/meta-gh#readme",
   "dependencies": {
     "commander": "^2.9.0",
-    "meta-loop": "0.0.3"
+    "meta-loop": "0.0.4",
+    "superagent": "^3.5.2"
   }
 }
