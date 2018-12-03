@@ -40,7 +40,7 @@
   "homepage": "https://github.com/mateodelnorte/meta-gh#readme",
   "dependencies": {
     "commander": "^2.9.0",
-    "meta-loop": "^0.0.5",
-    "superagent": "^3.5.2"
+    "meta-loop": "^0.0.8",
+    "superagent": "^4.0.0"
   }
 }
