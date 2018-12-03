@@ -1,4 +1,7 @@
 # meta-gh
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/mateodelnorte/meta-gh.svg)](https://greenkeeper.io/)
+
 gh plugin for [meta](https://github.com/mateodelnorte/meta)
 
 
