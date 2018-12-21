@@ -10,7 +10,7 @@ notifications:
 before_install:
   - npm install -g codecov
 script:
-  - make test-debug
+  - npm test
   - codecov
 
 branches:
