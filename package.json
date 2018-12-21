@@ -1,6 +1,6 @@
 {
   "name": "meta-gh",
-  "version": "0.0.5",
+  "version": "0.0.0-development",
   "description": "gh plugin for meta",
   "bin": {
     "meta-gh": "./bin/meta-gh",
@@ -16,7 +16,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\""
   },
   "repository": {
     "type": "git",
@@ -40,7 +40,7 @@
   "homepage": "https://github.com/mateodelnorte/meta-gh#readme",
   "dependencies": {
     "commander": "^2.9.0",
-    "meta-loop": "^0.0.5",
-    "superagent": "^3.5.2"
+    "meta-loop": "^1.0.0",
+    "superagent": "^4.0.0"
   }
 }
