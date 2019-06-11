@@ -9,14 +9,14 @@ const debug = require('debug')('meta-git');
 
 program
   .command('issue', 'Provides a set of util commands to work with Issues')
-    .alias('issues')
-    .alias('is')
+  .alias('issues')
+  .alias('is')
   .command('milestone', 'Provides a set of util commands to work with Milestones')
-    .alias('ms')
+  .alias('ms')
   .command('pull-request', 'Provides a set of util commands to work with Pull Requests')
-    .alias('pr')
+  .alias('pr')
   .command('repo', 'Provides a set of util commands to work with Repositories')
-    .alias('re')
+  .alias('re')
   .parse(process.argv);
 
 loaded = true;
@@ -39,5 +39,3 @@ List of available commands:
 (*) Flags that can execute an action.
 'gh help' lists available commands.
 'gh help -a' lists all available subcommands.*/
-
-
