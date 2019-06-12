@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/mateodelnorte/meta-gh.svg?branch=master)](https://travis-ci.com/mateodelnorte/meta-gh)
+
 # meta-gh
 gh plugin for [meta](https://github.com/mateodelnorte/meta)
 
