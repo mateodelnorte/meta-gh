@@ -49,7 +49,7 @@
   },
   "homepage": "https://github.com/mateodelnorte/meta-gh#readme",
   "dependencies": {
-    "commander": "^2.9.0",
+    "commander": "^3.0.0",
     "meta-loop": "^1.0.0",
     "superagent": "^5.0.8"
   },
