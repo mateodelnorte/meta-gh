@@ -45,7 +45,7 @@
   "dependencies": {
     "commander": "^2.20.3",
     "meta-loop": "^1.2.3",
-    "superagent": "^5.3.1"
+    "superagent": "^8.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "12.1.4",
